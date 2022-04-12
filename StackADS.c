@@ -28,7 +28,6 @@ Stack *createStack()
     return s;
 }
 
-
 int isStackEmpty(Stack *s)
 {
     return s->top == NULL;
@@ -80,7 +79,7 @@ void * popFromStack(Stack* s)
     return x;
 }
 
-void clearStack(Stack *s)
+void deleteStack(Stack *s)
 {
     while (s->top) {
         Node *temp = s->top;
@@ -89,4 +88,5 @@ void clearStack(Stack *s)
     }
     s->top = NULL;
 }
+
 
