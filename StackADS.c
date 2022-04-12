@@ -89,4 +89,3 @@ void deleteStack(Stack *s)
     s->top = NULL;
 }
 
-
